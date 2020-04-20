@@ -1,10 +1,31 @@
-# CameraCalibration
+---
 
-In this project, I implemented Camera Calibration using OPENCV library with Zhengyou Zhang's camera calibration technique. See the detail of this method here: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf
+## Clone this repository
 
-Reprojection from 3D points to 2D points are calculated and reprojection errors are measured in both left and right images.
-I also calculated 2D to 2D reprojection error with the Fundamental matrix measurement. 
-See the detail of Fundamental matrix here: 
-https://arxiv.org/pdf/1706.07886.pdf
+Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
 
-We can rectify the left and right images after camara calibration. 
+1. You’ll see the clone button under the **Source** heading. Click that button.
+2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
+3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
+4. Open the directory you just created to see your repository’s files.
+
+---
+
+## Use CMAKE to build the project
+
+The path of the source code is "yourPath/StereoCalibration"
+Build path is "yourPath/StereoCalibation/build"
+Build in VS (both debug and release)
+
+---
+
+## Open the solution and change the image path into your own path
+
+change:
+
+#define PATH "C:/Users/nicky/source/repos/StereoCalibration/Calib_Test_Pictures/"
+into 
+#define PATH "yourPath/StereoCalibration/Calib_Test_Pictures/"
+
+
+Now you can run it and see the result!
